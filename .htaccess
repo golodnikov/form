@@ -1,0 +1,7 @@
+<IfModule mod_headers.c>
+    SetEnvIf Origin "http(s)?://(www\.)?(allowed-domain1\.com|allowed-domain2\.com)$" AccessControlAllowOrigin=$0
+    Header always set Access-Control-Allow-Origin %{AccessControlAllowOrigin}e env=AccessControlAllowOrigin
+    Header always set Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS"
+    Header always set Access-Control-Allow-Headers "Origin, Accept, Content-Type, X-Requested-With, X-CSRF-Token"
+    Header always set Access-Control-Allow-Credentials true
+</IfModule>

@@ -1,0 +1,43 @@
+body {
+    font-family: ui-sans-serif;
+}
+
+.title {
+    text-align: center;
+}
+
+.payment-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #fca60738;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 5px 17px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color:#00adff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}

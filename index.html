@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Форма оплаты</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="payment-form">
+        <h1 class="title">Форма оплаты</h1>
+        <form id="payment-form">
+            <div class="form-group">
+                <label for="full_name">ФИО*</label>
+                <input type="text" id="full_name" name="full_name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail*</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Телефон*</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="activity_type">Вид деятельности*</label>
+                <input type="text" id="activity_type" name="activity_type" required>
+            </div>
+            <div class="form-group">
+                <label for="service_type">Выберите услугу</label>
+                <select id="service_type" name="service_type">
+                    <option value="Рабочее место">Рабочее место</option>
+                    <option value="Переговорка">Переговорка</option>
+                    <option value="Конференц-зал">Конференц-зал</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="rate_type">Выберите тариф</label>
+                <select id="rate_type" name="rate_type">
+                    <!-- Здесь будут отображаться тарифы с продолжительностями -->
+                </select>
+            </div>            
+            
+            <div class="form-group">
+                <label for="rental_duration">Срок аренды</label>
+                <select id="rental_duration" name="rental_duration">
+                    <!-- Здесь будет отображаться продолжительность, обновляется динамически -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="amount">Сумма</label>
+                <input type="text" id="amount" name="amount" readonly>
+            </div>
+            <button id="payment-button" type="button" onclick="submitPayment()" disabled>Оплатить</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
